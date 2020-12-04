@@ -1,8 +1,9 @@
 body{
     background-image: url(teslacar.jpg);
-box-sizing: border-box;
 }
-
+li{
+    text-decoration: none;
+}
 nav ul{
     display: flex;
     justify-content: space-between;
@@ -21,7 +22,7 @@ flex-direction: column;
     margin-bottom: 550px;
 }
 .order{
-    margin: 10px 300px 10px 300px;
+    
     display: flex;
     justify-content: space-around;
     align-items: stretch;
