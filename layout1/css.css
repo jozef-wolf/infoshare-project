@@ -2,6 +2,14 @@ body{
     margin: 0;
     background-image: url(teslacar.jpg);
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -22,6 +30,7 @@ nav a{
     flex-direction: row;
     justify-content: flex-start;
     text-decoration: none;
+
 }
 nav .menu{
     display: flex;
@@ -31,22 +40,34 @@ nav .menu{
 article{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     
 }
+
+h1{
+    font-size: 3rem;
+}
+
 article .center{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width:40%;
+    width: 80%;
+    margin-top: 35%;
 }
 
-
+article .center .button{
+    padding: 1%;
+    background-color: grey;
+    border-radius: 20%;
+    
+}
 
 footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+
 }
