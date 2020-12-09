@@ -37,13 +37,16 @@ ul{
 
 
 .left{
-    margin-left: 1%;
+    margin-left: 2vw;
    
 }
 
 .center{
-    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
     margin-left: 6%;
+    margin-right: 2%;
 }
 
 .right{
@@ -87,13 +90,18 @@ article{
 }
 
 h1{
-    font-size: auto;
-    margin-bottom: 55vh;
+    font-size: 38px;
+    margin-bottom: 40vh;
 }
 .header{
     display: flex;
-    justify-content: center;
-    width: 50%;
+    justify-content: space-around;
+    width: 550px;
+    height: 200px;
+    flex-wrap: wrap;
+    align-content: center;
+    
+    
 }
 
 .button{
@@ -101,12 +109,14 @@ h1{
     justify-content: center;
     border-radius: 30px;
     background-color: grey;
-    opacity: 80%;
-    width: 300px;
+    opacity: 70%;
+    width: 250px;
     height: 40px;
     line-height: 40px;
-    margin-right: 20px;
-    font-size: 90%;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    font-size: 14px;
     color: white;
 }
 .button:hover{
@@ -116,8 +126,7 @@ h1{
 }
 
 footer{
-    display: flex;
-    flex-direction: row;
+    
 }
 
 p{
