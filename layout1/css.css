@@ -20,7 +20,6 @@ nav {
     justify-content: space-between;
     margin-left: 1%;
     margin-right: 2%;
-    font-size: auto;
     text-transform: uppercase;
 }
  a{
@@ -37,10 +36,7 @@ ul{
 }
 
 
-.left{
-    margin-left: 2vw;
-   
-}
+
 
 .center{
     display: flex;
@@ -52,8 +48,8 @@ ul{
 
 .right{
     display: flex;
-    justify-content: space-evenly;
-    width: 10%;
+    justify-content:space-around;
+    width: 15%;
 }
 
 .menu-icon {
@@ -98,11 +94,8 @@ h1{
 .header{
     display: flex;
     justify-content: center;
-    width: 60vw;
-    height: 8vh;
-   
-    
-    
+    width: 600px;
+    height: 5vh;
 }
 
 .button{
@@ -112,8 +105,8 @@ h1{
     border-radius: 30px;
     background-color: rgb(39, 39, 39);
     opacity: 70%;
-    width: 80%;
-    height: 50%;
+    width: 330px;
+    height: 35px;
     margin: 2%;
     font-size: 14px;
     margin-top: 10px;
@@ -148,11 +141,18 @@ p{
     footer{
         font-size: 12px;
     }
-}
-
-@media (max-width: 768px){
     .button{
         font-size: 12px;
+    }
+}
+
+@media (max-width: 600px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
     }
 }
 
