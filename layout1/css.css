@@ -6,10 +6,10 @@ body{
 main{
     display: flex;
     flex-direction: column;
-    background-image: url(teslacar.jpg);
+    background-image: url(tesla.jpg);
     width: 100vw;
     height: 100vh;
-    font-size: auto;
+    font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
@@ -18,14 +18,15 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    margin-left: 1%;
+    margin-right: 2%;
     font-size: auto;
     text-transform: uppercase;
 }
+ a{
+     color: white;
+ }
 
-a{
-    color: black;
-}
 
 ul{
     display: flex;
@@ -61,12 +62,13 @@ ul{
     height: 15px;
     width: 20px;
     cursor: pointer;
+    
   }
 
 span {
     width: 20px;
     height: 2px;
-    background: black;
+    background: rgb(255, 255, 255);
     display: block;
   }
 
@@ -95,11 +97,10 @@ h1{
 }
 .header{
     display: flex;
-    justify-content: space-around;
-    width: 550px;
-    height: 200px;
-    flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
+    width: 60vw;
+    height: 8vh;
+   
     
     
 }
@@ -107,16 +108,15 @@ h1{
 .button{
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 30px;
-    background-color: grey;
+    background-color: rgb(39, 39, 39);
     opacity: 70%;
-    width: 250px;
-    height: 40px;
-    line-height: 40px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 10px;
+    width: 80%;
+    height: 50%;
+    margin: 2%;
     font-size: 14px;
+    margin-top: 10px;
     color: white;
 }
 .button:hover{
@@ -132,5 +132,32 @@ footer{
 p{
     display: flex;
     justify-content: center;
-    color:white;
+}
+
+@media (max-width: 1200px){
+.center{
+    display: none;
+    
+}
+}
+
+@media (max-width: 768px){
+    .main{
+        font-size: 16px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px){
+    .button{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px){
+    .main{
+        font-size: 12px;
+    }
 }
