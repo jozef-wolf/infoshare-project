@@ -55,7 +55,6 @@ ul{
   .searchButton {
     width: 40px;
     height: 36px;
-    text-align: center;
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
@@ -72,15 +71,28 @@ ul{
   }
 
   li{
+      display: flex;
+      align-items: center;
       list-style: none;
   }
 
   a{
       text-decoration: none;
   }
-  ul li a:first-child{
-      box-sizing: border-box;
+
+  li:nth-of-type(2){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      width: 150px;
+      border-radius: 25px;
       background-color: black;
+  }
+  .main{
       color: white;
-      border-radius: 
+  }
+
+  .observed{
+      color: black;
   }
