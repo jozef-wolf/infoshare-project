@@ -1,8 +1,10 @@
 body{
-margin: 0;
-height: 100vh;
-width: 100vw;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
 }
+
 
 header{
         position: fixed;
@@ -94,23 +96,32 @@ a{
     padding: 0;
     margin: 0;
 }
-img{
+.left img{
     width: 70px;
     height: auto;
 }
 
 #content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    margin-top: 150px;
+    position: relative;
+    width: 100%;
+    padding-top: 121px;
+    height: 100%;
 }
 
+.content-outer{
+    width: 1280px;
+    height: 600px;
+position: relative;
+margin-left: auto!important;
+margin-right: auto!important;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
 /*line with text in the middle*/
 
 .title {
+    padding: 20px;
     line-height: 0.2;
     text-align: center;
     font-size: 26px;
@@ -143,22 +154,25 @@ img{
     margin-left: 15px;
   }
 
-  .main-content{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100vw;
-      height: 600px;
-  }
-
   .article{
-      display: flex;
-      flex-direction: column;
-      width: 10vw;
-  }
+    position: relative;
+    float: left;
+    width: 205px;
+    margin-left: 10vw;
+}
+
+.teasers{
+    float: right;
+    position: relative;
+    height: 712px;
+    margin-right: 10vw;
+        
+}
+
 .story{
     font-size: 17px;
 }
+
 .button{
     width: 7vw;
     font-size: 14px;
@@ -174,9 +188,4 @@ img{
 .button:hover{
     background-color: #27b4b2;
     color: #a2d3d2;
-}
-
-.teasers{
-    display: grid;
-    
 }
