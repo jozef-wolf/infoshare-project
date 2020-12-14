@@ -20,7 +20,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100vw;
+    width: 95vw;
     height: 90px;
 }
 
@@ -40,16 +40,22 @@ ul{
   
   .searchTerm {
     width: 100%;
-    border: none;
+    border: transparent;
     padding: 5px;
-    height: 20px;
-    border-radius: 5px 0 0 5px;
+    height: 35px;
+    border-radius: 20px;
     outline: none;
-    color: #9DBFAF;
+    color: rgb(211, 211, 211);
+  }
+
+  .searchTerm:hover{
+    background-color: rgb(206, 206, 206);
   }
   
-  .searchTerm:focus{
- 
+  .searchTerm:active{
+    border: 3px solid rgb(37, 150, 179);
+    height: 38px;
+    background-color: white;
   }
   
   .searchButton {
@@ -61,15 +67,6 @@ ul{
     font-size: 20px;
   }
   
-  /*Resize the wrap to see the search bar change!*/
-  .wrap{
-    width: 30%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   li{
       display: flex;
       align-items: center;
@@ -98,31 +95,34 @@ ul{
   }
 
   /*Gallery */
-
-  .container{
-      width: 100vw;
-      margin-top: 100px;
-      margin-left: 5vw;
-      margin-right: 5vw;
-  }
-
-  div.gallery {
-    margin: 5px;
-    float: left;
-    width: 240px;
-  }
   
-  div.gallery:hover {
-    
+.container{
+  margin-top: 120px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 20px;
+  justify-content: center;
+  grid-auto-flow: dense;
   }
-  
-  div.gallery img {
+.container_item{
+  border-radius: 5px;
+  padding: 10px;
+  background: #f2f2f2;
+  position: relative;
+}
+img{
+  border-radius: 50px;
     width: 100%;
-    border-radius: 20px;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.container_item_row1{
+  grid-row-end: span 3;
+}
+.container_item_row2{
+  grid-row-end: span 2;
+}
+.container_item_row3{
+  grid-row-end: span 1;
+}
