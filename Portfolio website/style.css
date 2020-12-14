@@ -1,3 +1,67 @@
 body{
     margin: 0;
 }
+
+/*Fixed Header bar start*/
+
+.header{
+    position: fixed;
+    z-index: 901;
+    top: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #fff;  
+    height: 100px;
+    width: 100vw;
+    border-bottom: 1px solid rgb(58, 58, 45);
+}
+.menu{
+    float: left;
+    margin: 40px 30px 0 20px;
+    position: relative;
+    max-width: 400px;
+}
+
+.name{
+  float: left;
+    margin: 20px 0 0 0px;
+    position: relative;
+    max-width: 400px;
+    color: rgb(58, 58, 45);
+    font-size: 12px;
+}
+
+/*Hamburger menu*/
+
+.menu-icon {
+  display: grid;
+  place-items: center;
+  height: 25px;
+  width: 20px;
+  cursor: pointer;
+  
+}
+
+span {
+  width: 30px;
+  height: 2px;
+  background: rgb(58, 58, 45);
+  display: block;
+}
+/*Header bar stop*/
+
+/*Fixed footer*/
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(58, 58, 45);
+    text-align: left;
+    border-top: 1px solid rgb(58, 58, 45);
+}
+
+p{
+  margin-left: 20px;
+}

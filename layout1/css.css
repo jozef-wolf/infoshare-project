@@ -54,6 +54,17 @@ ul{
     width: 15%;
 }
 
+.menu{
+    float: left;
+    position: relative;
+}
+
+h1{
+    float: left;
+    margin: 12px 0 0 0px;
+    position: relative;
+    max-width: 400px;
+}
 .menu-icon {
     display: grid;
     place-items: center;
