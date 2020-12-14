@@ -71,6 +71,7 @@ ul{
       display: flex;
       align-items: center;
       list-style: none;
+      
   }
 
   a{
@@ -99,8 +100,9 @@ ul{
 .container{
   margin-top: 120px; 
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
-  grid-gap: 20px;
+  grid-template-columns: repeat(6, 250px);
+  grid-template-rows: repeat(12, 125px);
+  grid-gap: 30px;
   justify-content: center;
   grid-auto-flow: dense;
   }
@@ -111,18 +113,26 @@ ul{
   position: relative;
 }
 img{
-  border-radius: 50px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 .container_item_row1{
-  grid-row-end: span 3;
+  grid-row-end: span 1;
 }
 .container_item_row2{
   grid-row-end: span 2;
 }
 .container_item_row3{
-  grid-row-end: span 1;
+  grid-row-end: span 3;
+}
+.container_item_row4{
+grid-row-end: span 2;
+}
+.container_item_row5{
+grid-row-end: span 1;
+}
+.container_item_row6{
+grid-row-end: span 3;
 }
