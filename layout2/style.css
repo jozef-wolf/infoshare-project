@@ -62,6 +62,10 @@ header{
 
 }
 
+.logo{
+    margin: 20px 0 0 0;
+}
+
 /*right side of the navigation*/
 
 .external{
@@ -81,10 +85,16 @@ header{
     height: 4vh;
 }
 
-li{
+
+
+.left li{
     list-style: none;
     margin-right: 2vw;
     padding-bottom: 10px;
+}
+
+.right li{
+    list-style: none;
 }
 
 a{
@@ -248,17 +258,39 @@ h2 {
 
 @media (min-width:1001px){
     
-    ul:first-child li:nth-of-type(2){
+    .hamburger_menu{
         display: none;
     }
+
+   .right i{
+        display: none;
+    }
+
 }
 
 @media (max-width:1000px){
-    
+
     li{
     display: none;
     }
 
+    .hamburger_menu{
+        display: inline-block;
+    }
+
+    .right{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .right i{
+        display: inline-block;
+        
+    }
+
+    .logo{
+        margin: 0 5px;
+    }
 }
 
 @media (max-width: 768px){
