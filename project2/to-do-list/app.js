@@ -13,4 +13,7 @@ addBtn.addEventListener('click', function() {
     toDoTask.innerText = input.value;
     toDoContainer.append(toDoTask);
     input.value = '';
+    toDoTask.addEventListener('click', function(){
+        toDoTask.style.textDecoration = 'line-through';
+    })
 })
