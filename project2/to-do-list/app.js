@@ -11,17 +11,17 @@ const input = document.getElementById('input');
 addBtn.addEventListener('click', function () {
 
 //creating elements 
-    const toDoTask = document.createElement('p');
-    const rmBtn = document.createElement('button');
+    const toDoTask = document.createElement('li');   
     const doneBtn = document.createElement('button');
+    const rmBtn = document.createElement('button');
 
 //text of task     
     toDoTask.innerText = input.value;
 
 //adding task and remove button and done button    
     toDoContainer.append(toDoTask);
-    toDoTask.appendChild(doneBtn);
     toDoTask.appendChild(rmBtn);
+    toDoTask.appendChild(doneBtn);
     
 
 //task added with input 
@@ -43,3 +43,12 @@ addBtn.addEventListener('click', function () {
     })
 })
 
+input.addEventListener("keyup", function(event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      document.getElementById("add").click();
+    }
+  });

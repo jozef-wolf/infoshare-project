@@ -1,10 +1,11 @@
 body {
     margin: 0;
     width: 100vw;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif; 
     background-image: url(/to-do-list/img/background.jpg);
     background-size: cover;
     background-position: center;
+    color: rgb(53, 48, 38);
 }
 
 .header {
@@ -19,6 +20,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    
 }
 
 #bar {
@@ -28,7 +30,6 @@ body {
 #input {
     width: 40vw;
     height: 36px;
-    border: 1px solid black;
     outline: none;
     border-radius: 10px;
     border: none;
@@ -49,19 +50,30 @@ body {
     margin-top: 10px;
     height: 60vh;
     width: 80vw;
-    border-top: 1px solid black;
+    border-top: 2px solid black;
 }
 
-p {
+li {
+    margin-top: 10px;
     text-align: center;
     cursor: pointer;
     text-transform: capitalize;
+    list-style: none;
     margin-right: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-p button {
+button {
     cursor: pointer;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
+    margin-right: 5vw;
+    color: rgb(53, 48, 38);
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    float: right;
+
 }
