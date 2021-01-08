@@ -47,4 +47,12 @@ p{
     text-align: center;
     cursor: pointer;
     text-transform: capitalize;
+    margin-right: 2px;
+}
+
+p button{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
 }
