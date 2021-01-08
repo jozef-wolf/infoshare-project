@@ -1,6 +1,10 @@
 body {
     margin: 0;
     width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(/to-do-list/img/background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .header {
@@ -10,15 +14,14 @@ body {
 
 .container {
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
 }
 
-#bar{
+#bar {
     margin-top: 10px;
 }
 
@@ -27,30 +30,36 @@ body {
     height: 36px;
     border: 1px solid black;
     outline: none;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
 }
 
-#add{
+#add {
     height: 40px;
     width: 40px;
+    background-color: rgb(190, 190, 190);
+    border: none;
+    border-radius: 10px;
 }
 
-#toDoContainer{
+#toDoContainer {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    height: 40vh;
+    height: 60vh;
     width: 80vw;
-    border: 1px solid black;
+    border-top: 1px solid black;
 }
 
-p{
+p {
     text-align: center;
     cursor: pointer;
     text-transform: capitalize;
     margin-right: 2px;
 }
 
-p button{
+p button {
     cursor: pointer;
     height: 10px;
     width: 10px;
