@@ -20,23 +20,26 @@ addBtn.addEventListener('click', function () {
 
 //adding task and remove button and done button    
     toDoContainer.append(toDoTask);
-    toDoTask.appendChild(rmBtn);
     toDoTask.appendChild(doneBtn);
+    toDoTask.appendChild(rmBtn);
+    
 
 //task added with input 
     input.value = '';
 
 //buttons style    
-    rmBtn.style.backgroundColor = 'red';
-    doneBtn.style.backgroundColor = 'green';
+    doneBtn.innerHTML = '<i class="fas fa-check"></i>';
+    rmBtn.innerHTML = '<i class="far fa-trash-alt"></i>';
+
 
 //adding function to done button action
     doneBtn.addEventListener('click', function () {
         toDoTask.style.textDecoration = 'line-through';
-        toDoTask.style.color = 'green';
+
     })
 //adding function to remove button action 
     rmBtn.addEventListener('click', function () {
         toDoContainer.removeChild(toDoTask);
     })
 })
+
