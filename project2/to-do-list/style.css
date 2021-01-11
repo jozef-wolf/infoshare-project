@@ -18,7 +18,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-   
 }
 
 #bar {
@@ -32,16 +31,14 @@ body {
     border-radius: 10px;
     border: none;
     margin-right: 10px;
-    
 }
 
 #add {
     height: 40px;
     width: 40px;
-    background-color:rgb(100, 104, 68);
+    background-color: rgb(100, 104, 68);
     border: none;
     border-radius: 10px;
-    
 }
 
 #toDoContainer {
@@ -52,38 +49,31 @@ body {
     width: 80vw;
     border-top: 2px solid white;
     padding-top: 2px;
-    
 }
 
-li {
-    
+#toDoContainer div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     margin: 4px;
     height: 6vh;
-    text-align: center;
     cursor: pointer;
     text-transform: capitalize;
     list-style: none;
     margin-right: 2px;
     background-color: rgba(212, 219, 159, 0.5);
     border-radius: 10px;
-    font-size: 18px;
-    
 }
 
 button {
     cursor: pointer;
-    margin-right: 5vw;
     color: rgb(255, 255, 255);
-    height: 25px;
-    width: 25px;
-    font-size: 20px;
+    font-size: 18px;
     background-color: transparent;
     border: none;
-    float: right;
-    
+    margin-left: 5vw;
 }
 
-i{
-
+i {
     color: white;
 }

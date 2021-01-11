@@ -11,7 +11,7 @@ const input = document.getElementById('input');
 addBtn.addEventListener('click', function () {
 
     //creating elements 
-    const toDoTask = document.createElement('li');
+    const toDoTask = document.createElement('div');
     const doneBtn = document.createElement('button');
     const rmBtn = document.createElement('button');
 
