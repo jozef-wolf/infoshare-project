@@ -25,7 +25,8 @@ slide();
 //next button slider
 
 nextBtn.addEventListener('click', () => {
-
-})
+slidesContainer.style.tranform = 'translateX(-' + 
+slidewidth + 'px)';
+});
 
 //prev button slider
