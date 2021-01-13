@@ -25,8 +25,13 @@ slide();
 //next button slider
 
 nextBtn.addEventListener('click', () => {
-slidesContainer.style.tranform = 'translateX(-' + 
-slidewidth + 'px)';
+    slidesContainer.style.transform = 'translateX(-' +
+        width + 'px)';
 });
 
 //prev button slider
+
+nextBtn.addEventListener('click', () => {
+    slidesContainer.style.transform = 'translateX(-' -
+        width - 'px)';
+});
