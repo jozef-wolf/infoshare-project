@@ -6,12 +6,16 @@ body {
     font-weight: 100;
 }
 
+/*main title*/
+
 .header {
     text-align: center;
     color: white;
     text-transform: uppercase;
     letter-spacing: 12px;
 }
+
+/*main slide show container*/
 
 .container {
     width: 100%;
@@ -33,6 +37,8 @@ body {
     object-fit: cover;
 }
 
+/*Next and prev buttons*/
+
 .prev-btn, .next-btn {
     background-color: ;
     opacity: 20%;
@@ -43,7 +49,9 @@ body {
     transform: translateY(-50%);
     font-size: 60px;
     cursor: pointer;
+    z-index: 100;
     transition: 500ms;
+
 }
 
 .prev-btn:hover, .next-btn:hover {
