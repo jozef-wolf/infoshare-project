@@ -7,7 +7,7 @@ const nextBtn = document.querySelector('.next-btn');
 const prevBtn = document.querySelector('.prev-btn');
 
 //naming let elements
-
+let numberOfImages = slideImage.length;
 let width = slideImage[0].clientWidth;
 let activeSlide = 0;
 
@@ -26,6 +26,11 @@ slide();
 //next button slider
 
 nextBtn.addEventListener('click', () => {
+
+    
+    if (activeSlide =< numberOfImages-1)
+    
+    
     activeSlide++;
     nextSlide(activeSlide);
 });
