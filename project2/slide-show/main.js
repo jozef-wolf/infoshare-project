@@ -27,16 +27,17 @@ slide();
 
 nextBtn.addEventListener('click', () => {
 
-    
-    if (activeSlide =< numberOfImages-1)
-    
-    
+
+    if (activeSlide === numberOfImages-1) {
+        return numberOfImages;
+    }
+
     activeSlide++;
     nextSlide(activeSlide);
 });
 
 function nextSlide(slideNumber) {
-slidesContainer.style.transform = 'translateX(-' + 
+    slidesContainer.style.transform = 'translateX(-' +
         width * slideNumber + 'px)';
 }
 //prev button slider
@@ -47,6 +48,6 @@ prevBtn.addEventListener('click', () => {
 });
 
 function nextSlide(slideNumber) {
-slidesContainer.style.transform = 'translateX(-' + 
+    slidesContainer.style.transform = 'translateX(-' +
         width * slideNumber + 'px)';
 }
