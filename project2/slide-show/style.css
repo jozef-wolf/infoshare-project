@@ -22,8 +22,10 @@ body {
 }
 
 .slides-container {
-    height: 500px;
+    height: 600px;
     position: relative;
+    transition: 700ms;
+    width: 100%;
 }
 
 .slide-image {

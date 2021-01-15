@@ -9,6 +9,7 @@ const prevBtn = document.querySelector('.prev-btn');
 //naming let elements
 
 let width = slideImage[0].clientWidth;
+let activeSlide = 0;
 
 //slider 
 
@@ -25,13 +26,22 @@ slide();
 //next button slider
 
 nextBtn.addEventListener('click', () => {
-    slidesContainer.style.transform = 'translateX(-' +
-        width + 'px)';
+    activeSlide++;
+    nextSlide(activeSlide);
 });
 
+function nextSlide(slideNumber) {
+slidesContainer.style.transform = 'translateX(-' + 
+        width * slideNumber + 'px)';
+}
 //prev button slider
 
-nextBtn.addEventListener('click', () => {
-    slidesContainer.style.transform = 'translateX(-' -
-        width - 'px)';
+prevBtn.addEventListener('click', () => {
+    activeSlide--;
+    nextSlide(activeSlide);
 });
+
+function nextSlide(slideNumber) {
+slidesContainer.style.transform = 'translateX(-' + 
+        width * slideNumber + 'px)';
+}
