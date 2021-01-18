@@ -5,8 +5,9 @@ const slideImage = document.querySelectorAll('.slide-image');
 const slidesContainer = document.querySelector('.slides-container');
 const nextBtn = document.querySelector('.next-btn');
 const prevBtn = document.querySelector('.prev-btn');
-const slideShowBtn = document.querySelector('.slide-show-btn');
-const toggleBtn = document.getElementsByClassName('.fas fa-play');
+const playBtn = document.querySelector('.play-btn');
+const pauseBtn = document.querySelector('.pause-btn');
+
 
 //naming let elements
 let numberOfImages = slideImage.length;
@@ -57,14 +58,20 @@ function nextSlide(slideNumber) {
 
 //slide show
 
-slideShowBtn.addEventListener('click', () => {
+playBtn.addEventListener('click', () => {
     let slideInterval = setInterval(function () {
         activeSlide++;
         nextSlide(activeSlide);
-        if (activeSlide === 8) {
+        if (activeSlide === 8 || pauseBtn.clicked === true) {
             clearInterval(slideInterval);
         }
     }, 300);
 });
+
+// pauseBtn.addEventListener('click', () => {
+//     if (pauseBtn.clicked === ture);
+//     clearInterval(slideInterval);
+// });
+
 
 

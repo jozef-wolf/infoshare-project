@@ -78,18 +78,23 @@ body {
 }
 
 /* slide show button */
-.slide-show-btn{
+.pause-btn, .play-btn{
     opacity: 50%;
     border-radius: 100%;
     position: absolute;
     top: 95%;
-    left: 50%;
+    left: 47%;
     transform: translateY(-50%);
     font-size: 30px;
     cursor: pointer;
     z-index: 100;
     transition: 500ms;
 }
-.slide-show-btn:hover{
+
+.pause-btn{
+    left: 53%;
+}
+
+.pause-btn:hover, .play-btn:hover{
     opacity: 100%;
 }
