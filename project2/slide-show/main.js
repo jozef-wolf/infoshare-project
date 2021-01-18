@@ -33,7 +33,9 @@ nextBtn.addEventListener('click', () => {
     nextSlide(activeSlide);
 
     if (activeSlide === 8) {
-       
+        nextSlide(0);
+        activeSlide = 0;
+        return;
     }
 });
 
