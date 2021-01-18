@@ -27,9 +27,9 @@ slide();
 
 nextBtn.addEventListener('click', () => {
 
-    // if (activeSlide === numberOfImages-1) {
-    //     return numberOfImages;
-    // }
+    if (activeSlide === numberOfImages-1) {
+        return numberOfImages;
+    }
 
     activeSlide++;
     nextSlide(activeSlide);
