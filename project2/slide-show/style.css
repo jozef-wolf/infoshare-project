@@ -76,3 +76,20 @@ body {
     right: 0;
     color: rgb(0, 0, 0);
 }
+
+/* slide show button */
+.slide-show-btn{
+    opacity: 50%;
+    border-radius: 100%;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 100;
+    transition: 500ms;
+}
+.slide-show-btn:hover{
+    opacity: 100%;
+}
