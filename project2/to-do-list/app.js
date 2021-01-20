@@ -34,7 +34,7 @@ addBtn.addEventListener('click', function () {
     //adding function to done button action
     doneBtn.addEventListener('click', function () {
         toDoTask.style.textDecoration = 'line-through';
-
+        //toDoTask.classlist.toggle('done');
     })
     //adding function to remove button action 
     rmBtn.addEventListener('click', function () {
