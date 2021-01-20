@@ -32,10 +32,8 @@ slide();
 nextBtn.addEventListener('click', () => {
     activeSlide++;
     nextSlide(activeSlide);
-
     if (activeSlide === 8) {
-        nextSlide(0);
-        activeSlide = 0;
+        activeSlide = -1;
         return;
     }
 });
@@ -56,22 +54,27 @@ function nextSlide(slideNumber) {
         width * slideNumber + 'px)';
 }
 
-//slide show
+//play slide show
 
 playBtn.addEventListener('click', () => {
-    let slideInterval = setInterval(function () {
+    slideInterval = setInterval(function () {
         activeSlide++;
         nextSlide(activeSlide);
-        if (activeSlide === 8 || pauseBtn.clicked === true) {
-            clearInterval(slideInterval);
+        if (activeSlide === 8) {              // active || pauseBtn.clicked === true
+            clearInterval(slideInterval);    // else pauseBtn.clicked === true
+        }
+        if (activeSlide === 8) {
+            activeSlide = -1;
+            return;
         }
     }, 300);
 });
 
-// pauseBtn.addEventListener('click', () => {
-//     if (pauseBtn.clicked === ture);
-//     clearInterval(slideInterval);
-// });
+//pause slide show
+
+pauseBtn.addEventListener('click', () => {
+    clearInterval();
+});
 
 
 
