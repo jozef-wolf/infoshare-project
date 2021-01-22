@@ -98,3 +98,7 @@ body {
 .pause-btn:hover, .play-btn:hover{
     opacity: 100%;
 }
+
+.change-color {
+    opacity: 100%;
+}

@@ -58,8 +58,13 @@ function nextSlide(slideNumber) {
         width * slideNumber + 'px)';
 }
 
-//play slide show
+//play and pause slide show
 
+//pause show function
+const pauseShow = pauseBtn.addEventListener('click', () => {    //pause button added
+    clearInterval(slideShow);
+    return;
+});
 
 
 playBtn.addEventListener('click', () => {
@@ -68,22 +73,19 @@ playBtn.addEventListener('click', () => {
         activeSlide++;
         nextSlide(activeSlide);
         if (activeSlide === 8) {
-            console.log('clear');            // active || pauseBtn.clicked === true
-            clearInterval(slideShow);    // else pauseBtn.clicked === true
+            console.log('clear');
+            clearInterval(slideShow);
         }
         if (activeSlide === 8) {
             activeSlide = -1;
             return;
         } else {
-            pauseBtn.addEventListener('click', () => {
-                clearInterval(slideShow);
-                return;
-            });
+            return pauseShow;
         }
     }, 300);
 });
 
-//pause slide show
+
 
 
 
