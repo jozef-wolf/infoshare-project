@@ -59,33 +59,33 @@ function nextSlide(slideNumber) {
 }
 
 //play slide show
-//slideinterval globalnie
-//przypisac setinterval
+
+
 
 playBtn.addEventListener('click', () => {
-    let slideInterval = setInterval(function () {
+    slideShow = setInterval(function () {
         console.log('start');
         activeSlide++;
         nextSlide(activeSlide);
         if (activeSlide === 8) {
             console.log('clear');            // active || pauseBtn.clicked === true
-            clearInterval(slideInterval);    // else pauseBtn.clicked === true
+            clearInterval(slideShow);    // else pauseBtn.clicked === true
         }
         if (activeSlide === 8) {
             activeSlide = -1;
             return;
+        } else {
+            pauseBtn.addEventListener('click', () => {
+                clearInterval(slideShow);
+                return;
+            });
         }
     }, 300);
 });
 
 //pause slide show
-//funkcja
 
 
-pauseBtn.addEventListener('click', () => {
-    clearInterval(slideInterval);
-    return;
-});
-console.log
+
 
 
