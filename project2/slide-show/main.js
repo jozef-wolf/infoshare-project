@@ -1,5 +1,5 @@
 
-//naming const elements 
+//naming elements 
 
 const slideImage = document.querySelectorAll('.slide-image');
 const slidesContainer = document.querySelector('.slides-container');
@@ -9,7 +9,7 @@ const playBtn = document.querySelector('.play-btn');
 const pauseBtn = document.querySelector('.pause-btn');
 
 
-//naming let elements
+//naming 
 let numberOfImages = slideImage.length;
 let width = slideImage[0].clientWidth;
 let activeSlide = 0;
@@ -71,7 +71,7 @@ playBtn.addEventListener('click', () => {
 });
 
 //pause slide show
-
+//funkcja
 pauseBtn.addEventListener('click', () => {
     clearInterval();
 });

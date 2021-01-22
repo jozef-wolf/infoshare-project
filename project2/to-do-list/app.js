@@ -9,7 +9,10 @@ const input = document.getElementById('input');
 
 //adding function to + button
 addBtn.addEventListener('click', function () {
-
+    if (input.value.trim() === '') {
+        alert('Cannot add empty task');
+        return;
+    }
     //creating elements 
     const toDoTask = document.createElement('div');
     const doneBtn = document.createElement('button');
@@ -34,13 +37,23 @@ addBtn.addEventListener('click', function () {
     //adding function to done button action
     doneBtn.addEventListener('click', function () {
         toDoTask.style.textDecoration = 'line-through';
-        //toDoTask.classlist.toggle('done');
+
     })
     //adding function to remove button action 
     rmBtn.addEventListener('click', function () {
         toDoContainer.removeChild(toDoTask);
     })
 })
+
+//input value required
+
+function emptyValue() {
+    if (input.value.trim() === '') {
+        return;
+    }
+}
+
+
 
 input.addEventListener("keyup", function (event) {
     // Number 13 is the "Enter" key on the keyboard

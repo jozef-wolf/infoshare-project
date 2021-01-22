@@ -78,5 +78,9 @@ i {
     color: white;
 }
 
+.visible{
+
+    text-decoration: line-through;
+}
 
 /*toggle class list */
