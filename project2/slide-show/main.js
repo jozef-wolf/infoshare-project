@@ -36,6 +36,7 @@ nextBtn.addEventListener('click', () => {
         activeSlide = -1;
         return;
     }
+
 });
 
 function nextSlide(slideNumber) {
@@ -45,6 +46,9 @@ function nextSlide(slideNumber) {
 //prev button slider
 
 prevBtn.addEventListener('click', () => {
+    if (activeSlide === 0) {
+        return;
+    }
     activeSlide--;
     nextSlide(activeSlide);
 });
@@ -55,12 +59,16 @@ function nextSlide(slideNumber) {
 }
 
 //play slide show
+//slideinterval globalnie
+//przypisac setinterval
 
 playBtn.addEventListener('click', () => {
-    slideInterval = setInterval(function () {
+    let slideInterval = setInterval(function () {
+        console.log('start');
         activeSlide++;
         nextSlide(activeSlide);
-        if (activeSlide === 8) {              // active || pauseBtn.clicked === true
+        if (activeSlide === 8) {
+            console.log('clear');            // active || pauseBtn.clicked === true
             clearInterval(slideInterval);    // else pauseBtn.clicked === true
         }
         if (activeSlide === 8) {
@@ -72,9 +80,12 @@ playBtn.addEventListener('click', () => {
 
 //pause slide show
 //funkcja
-pauseBtn.addEventListener('click', () => {
-    clearInterval();
-});
 
+
+pauseBtn.addEventListener('click', () => {
+    clearInterval(slideInterval);
+    return;
+});
+console.log
 
 
