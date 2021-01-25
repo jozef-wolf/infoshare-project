@@ -85,6 +85,25 @@ playBtn.addEventListener('click', () => {
     }, 300);
 });
 
+//buttons opacity changed
+
+function opacityChange() {
+    let button = document.getElementById('change-opacity').style.opacity;
+    let opacity = '';
+    console.log(button);
+    if (button !== '100%') {
+        opacity = '50%';
+        document.getElementById('change-opacity').style.opacity = opacity;
+
+    }
+    else if (button === '50%') {
+        opacity = '100%';
+        document.getElementById('change-opacity').style.opacity = opacity;
+
+    }
+
+}
+
 
 
 
