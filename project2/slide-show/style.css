@@ -79,6 +79,7 @@ body {
 
 /* slide show button */
 .pause-btn, .play-btn{
+    opacity: 50%;
     border-radius: 100%;
     position: absolute;
     top: 95%;
@@ -94,10 +95,10 @@ body {
     left: 53%;
 }
 
-/*opacity wip*/
-
-#change-opacity{
-    opacity: 50%;
+.pause-btn:hover, .play-btn:hover{
+    opacity: 100%;
 }
+
+
 
 
