@@ -16,5 +16,5 @@
 
 ## 3. *Project 3*
 
-### WORK IN PROGRES...
+### WORK IN PROGRESS...
 
