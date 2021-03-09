@@ -30,7 +30,6 @@ addBtn.addEventListener("click", function () {
 
   //adding function to done button action
 
-  function myFunction() {}
   doneBtn.addEventListener("click", function () {
     toDoTask.classList.toggle("task--done");
   });
