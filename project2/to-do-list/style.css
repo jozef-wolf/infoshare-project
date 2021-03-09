@@ -1,86 +1,88 @@
 body {
-    margin: 0;
-    width: 100vw;
-    font-family: 'Montserrat';
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+  margin: 0;
+  width: 100vw;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 .header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-    width: 100vw;
-    min-height: 80vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+  width: 100vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 #bar {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #input {
-    width: 40vw;
-    height: 36px;
-    outline: none;
-    border-radius: 10px;
-    border: none;
-    margin-right: 10px;
+  width: 40vw;
+  height: 36px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
 }
 
 #add {
-    height: 40px;
-    width: 40px;
-    background-color: rgb(100, 104, 68);
-    border: none;
-    border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(100, 104, 68);
+  border: none;
+  border-radius: 10px;
 }
 
 #toDoContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    min-height: 60vh;
-    width: 80vw;
-    border-top: 2px solid white;
-    padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  min-height: 60vh;
+  width: 80vw;
+  border-top: 2px solid white;
+  padding-top: 2px;
 }
 
 #toDoContainer div {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 4px;
-    height: 6vh;
-    cursor: pointer;
-    text-transform: capitalize;
-    list-style: none;
-    margin-right: 2px;
-    background-color: rgba(212, 219, 159, 0.5);
-    border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 4px;
+  height: 6vh;
+  cursor: pointer;
+  text-transform: capitalize;
+  list-style: none;
+  margin-right: 2px;
+  background-color: rgba(212, 219, 159, 0.5);
+  border-radius: 10px;
 }
 
 button {
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    background-color: transparent;
-    border: none;
-    margin-left: 5vw;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  margin-left: 5vw;
+}
+.task--done {
+  text-decoration: line-through;
 }
 
 i {
-    color: white;
+  color: white;
 }
 
-.visible{
-
-    text-decoration: line-through;
+.visible {
+  text-decoration: line-through;
 }
 
 /*toggle class list */
