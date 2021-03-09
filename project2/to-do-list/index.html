@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/02f93ef71a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <title>To do list</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/02f93ef71a.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-</head>
-
-<body>
-    <div class="header">
-        <h1></h1>
-    </div>
-    <div class="container">
-        <div id="bar">
-            <input id="input" type="text" placeholder="Add a task here..."><button id="add">+</button>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>To do list</h1>
+      </div>
+      <div class="container">
+        <div class="container__bar">
+          <input
+            class="container__bar--input"
+            type="text"
+            placeholder="Add a task here..."
+          /><button class="container__bar--addBtn">+</button>
         </div>
-        <div class="toDo" id="toDoContainer"></div>
+      </div>
+      <div class="container__taskList"></div>
     </div>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
