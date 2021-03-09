@@ -24,16 +24,17 @@ addBtn.addEventListener("click", function () {
 
   //adding task and remove button and done button
   toDoContainer.append(toDoTask);
-  buttons.appendChild(rmBtn);
   buttons.appendChild(doneBtn);
+  buttons.appendChild(rmBtn);
+
   toDoTask.appendChild(buttons);
 
   //task added with input
   input.value = "";
 
   //buttons style
-  doneBtn.innerHTML = '<i class="fas fa-check"></i>';
-  rmBtn.innerHTML = '<i class="far fa-trash-alt"></i>';
+  doneBtn.innerHTML = '<i class="fas fa-check-circle"></i>';
+  rmBtn.innerHTML = '<i class="fas fa-trash-alt"></i>';
 
   //adding function to done button action
 
@@ -61,6 +62,6 @@ input.addEventListener("keyup", function (event) {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
-    document.getElementById("add").click();
+    document.querySelector(".container__bar--addBtn").click();
   }
 });
