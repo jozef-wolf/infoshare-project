@@ -3,12 +3,12 @@ body {
   font-family: "Inconsolata", monospace;
   color: rgb(255, 255, 255);
   background-color: #1e3b61;
+  width: 100%;
 }
 .wrapper {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 2%;
 }
 
 .header {
@@ -58,7 +58,8 @@ body {
 }
 
 .container__taskList {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   height: auto;
   width: 100%;
 }
@@ -66,7 +67,7 @@ body {
 .task {
   background-color: #3262a1;
   display: flex;
-  justify-content: end;
+  justify-content: stretch;
   align-items: center;
   border-radius: 20px;
   margin: 5px;
