@@ -1,6 +1,6 @@
-const addBtn = document.getElementById("add");
-const toDoContainer = document.getElementById("toDoContainer");
-const input = document.getElementById("input");
+const addBtn = document.querySelector(".container__bar--addBtn");
+const toDoContainer = document.querySelector(".container__taskList");
+const input = document.querySelector(".container__bar--input");
 
 //adding function to + button
 addBtn.addEventListener("click", function () {
@@ -10,16 +10,23 @@ addBtn.addEventListener("click", function () {
   }
   //creating elements
   const toDoTask = document.createElement("div");
+  const toDoText = document.createElement("p");
+  const buttons = document.createElement("div");
   const doneBtn = document.createElement("button");
   const rmBtn = document.createElement("button");
 
   //text of task
-  toDoTask.innerText = input.value;
+  toDoText.innerText = input.value;
+  toDoTask.append(toDoText);
+
+  //add class to task
   toDoTask.classList.add("task");
+
   //adding task and remove button and done button
   toDoContainer.append(toDoTask);
-  toDoTask.appendChild(rmBtn);
-  toDoTask.appendChild(doneBtn);
+  buttons.appendChild(rmBtn);
+  buttons.appendChild(doneBtn);
+  toDoTask.appendChild(buttons);
 
   //task added with input
   input.value = "";
@@ -33,6 +40,7 @@ addBtn.addEventListener("click", function () {
   doneBtn.addEventListener("click", function () {
     toDoTask.classList.toggle("task--done");
   });
+
   //adding function to remove button action
   rmBtn.addEventListener("click", function () {
     toDoContainer.removeChild(toDoTask);
