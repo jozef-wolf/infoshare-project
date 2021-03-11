@@ -6,6 +6,12 @@
   overflow: hidden;
   position: relative;
 }
+
+.header {
+  text-align: center;
+  letter-spacing: 10px;
+}
+
 .slider__container {
   display: flex;
   height: 400px;
