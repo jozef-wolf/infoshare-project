@@ -1,0 +1,15 @@
+.slider {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.slider__container {
+  display: flex;
+  height: 400px;
+  transform: translate(0);
+}
+.slider__container--image {
+  width: 100%;
+}
