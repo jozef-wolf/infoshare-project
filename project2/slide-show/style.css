@@ -6,8 +6,23 @@ body {
 }
 .wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
+}
+.header {
+  font-size: 40px;
+  width: 100%;
+  height: 10vh;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 25%;
+  letter-spacing: 100px;
+  text-transform: uppercase;
 }
 .slider {
   margin-top: 20px;
@@ -19,7 +34,7 @@ body {
   box-shadow: 1px 1px 15px -1px rgba(163, 163, 163, 0.3);
 }
 
-.header {
+.title {
   text-align: center;
   letter-spacing: 16px;
   color: white;
@@ -83,6 +98,9 @@ footer {
     font-size: 2rem;
   }
   .header {
+    letter-spacing: 5px;
+  }
+  .title {
     font-size: 14px;
     letter-spacing: 10px;
   }
