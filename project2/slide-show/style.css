@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 }
 .slider__container {
   display: flex;
@@ -13,4 +14,36 @@
 }
 .slider__container--image {
   width: 100%;
+}
+
+.slider__controls {
+  font-size: 3rem;
+}
+
+.previous {
+  left: 20px;
+}
+.previous:hover {
+  left: 10px;
+}
+
+.next {
+  right: 45px;
+}
+
+.next:hover {
+  right: 35px;
+}
+
+.previous,
+.next {
+  width: 20px;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 75%;
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  transition: all 0.3s ease;
+  color: white;
 }
