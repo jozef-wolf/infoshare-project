@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(41, 41, 41);
+}
 .slider {
   width: 600px;
   margin: 0 auto;
@@ -10,6 +13,7 @@
 .header {
   text-align: center;
   letter-spacing: 10px;
+  color: white;
 }
 
 .slider__container {
@@ -46,10 +50,18 @@
   width: 20px;
   display: inline-block;
   cursor: pointer;
-  opacity: 75%;
+  opacity: 30%;
   transform: translateY(-50%);
-  top: 50%;
+  top: 60%;
   position: absolute;
   transition: all 0.3s ease;
   color: white;
+}
+
+footer {
+  text-align: end;
+  padding-right: 20px;
+  background-color: rgb(167, 167, 167);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
