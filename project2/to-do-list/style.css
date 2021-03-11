@@ -45,13 +45,13 @@ body {
 
 .container__bar--addBtn {
   font-size: 26px;
-  border: none;
+  border: 1px solid white;
   background-color: transparent;
   color: white;
   cursor: pointer;
   outline: none;
   background-color: #4a90ed;
-  border-left-color: #1e3b61;
+
   border-radius: 20px;
   width: 50px;
   height: 100%;
@@ -91,7 +91,7 @@ body {
   cursor: pointer;
   background-color: transparent;
   color: white;
-  border: 1px solid white;
+  border: none;
   outline: none;
   font-size: 20px;
 }
