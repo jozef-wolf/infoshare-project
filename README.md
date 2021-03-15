@@ -14,7 +14,4 @@
 
 ### 2. [Go to "Slider"](https://infoshareacademy.github.io/jfddr2-projects-jozef-wolf/project2/slide-show/index.html)
 
-## 3. *Project 3*
-
-### WORK IN PROGRESS...
 
