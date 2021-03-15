@@ -15,4 +15,4 @@
 ### 2. [Go to "Slider"](https://infoshareacademy.github.io/jfddr2-projects-jozef-wolf/project2/slide-show/index.html)
 
 
-![](astro.JPG)
+![](images/astro.JPG)
