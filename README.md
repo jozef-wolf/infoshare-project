@@ -10,7 +10,7 @@
 
 ### 2. [Magnum Photos layout 2](https://infoshareacademy.github.io/jfddr2-projects-jozef-wolf/layout2/index.html)
 
-![](images/magnum.JPG) ![](images/magnum.JPG)
+![](images/magnum.JPG) ![](images/magnum2.JPG)
 
 ### 3. [Pinterest layout 3](https://infoshareacademy.github.io/jfddr2-projects-jozef-wolf/layout3/index.html)
 
